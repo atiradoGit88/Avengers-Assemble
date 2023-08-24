@@ -21,7 +21,7 @@ function App() {
         <NavBar />
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} activeClassName="active-link" />
             <Route path="/avengers" element={<Index />} />
             <Route path="/avengers/new" element={<New />} />
             <Route path="/avengers/:index" element={<Show />} />

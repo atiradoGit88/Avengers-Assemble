@@ -17,11 +17,11 @@ function Home() {
   }, []);
 
   return (
-    <div className="container-fluid movie-app">
-      <h2>Avengers Assemble</h2>
+    <div className="main-wrapper">
+      <h2 className="app-header-title"> Avengers <span> Assemble </span></h2>
      
       
-      
+      1
       
 
     {avengers.map((avenger, index) => (

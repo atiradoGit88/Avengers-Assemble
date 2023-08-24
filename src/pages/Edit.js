@@ -1,4 +1,5 @@
 import AvengerEditForm from "../components/AvengerEditForm";
+import "./Edit.css"
 
 
 function Edit() {

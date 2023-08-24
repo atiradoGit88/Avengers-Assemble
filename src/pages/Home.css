@@ -1,0 +1,8 @@
+@Font-face {
+    font-family: avengers;
+    src: url(./avengers.ttf) format('truetype');
+  }
+  
+  .body {
+    font-family: avengers;
+  }

@@ -21,7 +21,7 @@ function AvengersDetails() {
   }, [index, navigate, API]);
 
   const handleDelete = () => {
-    if (window.confirm("Are you sure you want DELETE this avenger?")) {
+    if (window.confirm("Are you sure you want to DELETE this avenger?")) {
       axios
       .delete(`${API}/avengers/${index}`)
       .then(() => {

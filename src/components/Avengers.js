@@ -20,7 +20,7 @@ function Avengers() {
     <div className="container align-items-center">
     <div className="row justify-content-center">
         {avengers.map(avenger => {
-          return <Avenger key={avengers.id} avenger={avenger} />;
+          return <Avenger key={avenger.id} avenger={avenger} />;
         })}
     </div>
   </div>
