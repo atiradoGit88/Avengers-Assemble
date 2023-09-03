@@ -1,3 +1,7 @@
+html {
+    background-color: black;
+  }
+
 @Font-face {
     font-family: avengers;
     src: url(./avengers.ttf) format('truetype');
@@ -5,4 +9,37 @@
   
   .body {
     font-family: avengers;
+    
+  }
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+  }
+
+  .card {
+    margin-top: 20px; 
+  }
+  
+  .image-container {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .avengers {
+    display:inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: silver;
+  }
+
+  .avengers span{
+    display: inline-block;
+    border: 10px solid black;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    line-height: 2;
   }

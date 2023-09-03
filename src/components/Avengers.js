@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Avenger from "./Avenger";
+import './Avengers.css';
 
 const API = process.env.REACT_APP_API_URL;
 function Avengers() {
@@ -17,8 +18,8 @@ function Avengers() {
   }, []);
   
   return (
-    <div className="container align-items-center">
-    <div className="row justify-content-center">
+    <div className="content">
+    <div className="row">
         {avengers.map(avenger => {
           return <Avenger key={avenger.id} avenger={avenger} />;
         })}

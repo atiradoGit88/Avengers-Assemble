@@ -6,3 +6,16 @@
   body {
     font-family: avengers;
   }
+
+  * {
+    outline: 1px solid #ffff;
+  } 
+  
+
+  .content{
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:1rem
+}

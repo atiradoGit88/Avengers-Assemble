@@ -1,0 +1,17 @@
+.card{
+    background-color: #2e2f33;
+    color: white;
+    position: relative;
+    margin-top: 3rem;
+    padding: .5px;
+}
+
+.card img{
+    width: 70%;
+    height: 75%;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}

@@ -5,7 +5,7 @@ function Index() {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-auto">
+          <div className="content">
             <Avengers />
           </div>
         </div>

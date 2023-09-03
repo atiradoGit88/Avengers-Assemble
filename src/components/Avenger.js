@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Avenger.css';
 
 
 function Avenger({ avenger }) {
   return (
-    <div className="col-md-4 mb-3">
-      <div className="list-group">
+    <div className="hero-container">
+      <div className="card">
         <Link to={`/avengers/${avenger.id}`} className="list-group-item">
           <img
             src={avenger.file_photo}

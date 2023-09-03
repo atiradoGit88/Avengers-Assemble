@@ -1,0 +1,17 @@
+.nav {
+    display: grid;
+    grid-auto-flow:column;
+    place-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-left: 8%;
+}
+
+.nav a{
+    color: rgb(223, 216, 216);
+    display: inline-block;
+    border: 10px solid black;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    line-height: 2;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import './AvengerNewForm.css'
 const API = process.env.REACT_APP_API_URL;
 
 function AvengersNewForm() {
@@ -46,8 +47,8 @@ function AvengersNewForm() {
   };
 
   return (
-    <div className="row justify-content-md-center">
-      <div className="col-md-auto">
+    <div className="new-form-container">
+      <div className="options">
         <h1>New Avenger Item</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-floating">
