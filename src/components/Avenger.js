@@ -7,17 +7,14 @@ function Avenger({ avenger }) {
   return (
     <div className="hero-container">
       <div className="card">
-        <Link to={`/avengers/${avenger.id}`} className="list-group-item">
-          <img
+        <Link to={`/avengers/${avenger.id}`} className="card__link">
+          <img className="card__image"
             src={avenger.file_photo}
             alt={avenger.vigilante_title}
-            className="img-fluid custom-movie-poster"
           />
         </Link>
-        <div className="list-group-item">
-          <h5 className="mb-1">{avenger.vigilante_title}</h5>
-          <p className="mb-0">{avenger.power_scale}</p>
-        </div>
+          <h5 className="card__vigilante_title">{avenger.vigilante_title}</h5>
+          <p className="card__power_scale">{avenger.power_scale}</p>
       </div>
     </div>
   );

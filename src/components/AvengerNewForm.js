@@ -47,112 +47,95 @@ function AvengersNewForm() {
   };
 
   return (
-    <div className="new-form-container">
-      <div className="options">
-        <h1>New Avenger Item</h1>
+    <div className="rookie__new-container">
+      <h1 className="rookie__header">New Avenger Item</h1>
+      <div className="rookie__form">
         <form onSubmit={handleSubmit}>
-          <div className="form-floating">
-            <input
+          
+            <input className="rookie__options"
             id="vigilante_title" 
             type="text" 
             value={avenger.vigilante_title}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="Vigilante title"
             required
             />
             <label htmlFor="vigilante_title">Title:</label>
-          </div>
+         
             <br></br>
-          <div className="form-floating">
-            <input
+          
+            <input className="rookie__options"
             id="abilities" 
             type="text" 
             value={avenger.abilities}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="Abilities"
             required
             />
             <label htmlFor="abilities">Abilities:</label>
-          </div>
+         
             <br></br>
-          <div className="form-floating">
-            <input
+      
+            <input className="rookie__options"
             id="birthplace" 
             type="text" 
             value={avenger.birthplace}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="birthplace"
             required
             />
             <label htmlFor="birthplace">Birthplace:</label>
-          </div>
+       
             <br></br>
-          <div className="form-check form-switch">
-            <input 
+         
+            <input className="rookie__options"
             id="is_ally"
             type="checkbox" 
             value={avenger.is_ally}
             checked={avenger.is_ally}
             onChange={handleCheckboxChange}
-            className="form-check-input" 
             />
-            <label className="form-check-label" htmlFor="is_ally">Can We Trust Them?</label>
-          </div>
+            <label className="rookie__label" htmlFor="is_ally">Can We Trust Them?</label>
+        
             <br></br>
-          <div className="form-floating">
-            <input
+     
+            <input className="rookie__options"
             id="power_scale" 
             type="number" 
             value={avenger.power_scale}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="Power Scale"
             required
             />
             <label htmlFor="power_scale">Power Scale:</label>
-          </div>
+        
             <br></br>
-          <div className="form-floating">
-            <input
+      
+            <input className="rookie__options"
             id="alter_ego" 
             type="text" 
             value={avenger.alter_ego}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="Alter Ego"
             required
             />
             <label htmlFor="alter_ego">Alter Ego:</label>
-          </div>
+        
             <br></br>
-          <div className="form-floating">
-            <input
+            <input  className="rookie__options"
             id="issue_appearance" 
             type="number" 
             value={avenger.issue_appearance}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="Issue Appearance"
             required
             />
-            <label htmlFor="issue_appearance">Issue Appearance# :</label>
-          </div>
+            <label htmlFor="issue_appearance">Issue Appearance Number</label>
+
             <br></br>
-          <div className="form-floating">
-            <input
+            <input className="rookie__options"
             id="file_photo" 
             type="text" 
             value={avenger.file_photo}
             onChange={handleTextChange}
-            className="form-control" 
-            placeholder="File Photo"
             required
             />
             <label htmlFor="poster">poster:</label>
-          </div>
+
             <br></br>
           <input type="submit" />
         </form>

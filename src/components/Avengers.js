@@ -11,6 +11,7 @@ function Avengers() {
     axios
       .get(`${API}/avengers`)
       .then((response) => {
+          console.log(response.data)
           setAvengers(response.data)})
       .catch((e) => {
         console.error("catch", e)

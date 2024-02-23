@@ -1,0 +1,36 @@
+html {
+    background-color: black;
+  }
+
+@Font-face {
+    font-family: avengers;
+    src: url(./avengers.ttf) format('truetype');
+  }
+  
+  .body {
+    font-family: avengers;
+    
+  }
+
+  .avengers__main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+  }
+
+  .avengers__card {
+    margin-top: 20px; 
+  }
+  
+  .avengers__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .avengers__avengers{
+    color: rgb(223, 216, 216);
+    font-size: 75px;
+    border: 10px solid black;
+  }

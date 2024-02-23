@@ -4,10 +4,10 @@ import './NavBar.css';
 function NavBar() {
   return (
     <nav className="navbar">
-    <div className="nav">
-        <Link className="navbar-brand" to="/">Home</Link>
-        <Link className="navbar-brand" to="/avengers">Avengers</Link>
-        <Link className="navbar-link" to="/avengers/new">New Avenger</Link>
+    <div className="navbar__options">
+        <Link to="/">Home</Link>
+        <Link to="/avengers">Avengers</Link>
+        <Link to="/avengers/new">New Avenger</Link>
     </div> 
     </nav>
   );
